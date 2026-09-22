@@ -9,9 +9,7 @@ matplotlib.rcParams['font.family'] = 'DejaVu Sans'
 RESULTS_CSV = 'results.csv'
 
 
-# ============================================================
 # Чтение и подготовка данных
-# ============================================================
 
 def load_results(filename=RESULTS_CSV):
     """Прочитать CSV и вернуть список словарей с приведёнными типами."""
@@ -46,9 +44,7 @@ def extract_curve(rows, protocol, window_size):
     return filtered, p
 
 
-# ============================================================
 # Теоретические формулы
-# ============================================================
 
 def theoretical_overhead(protocol, window, p_error):
     """
@@ -68,9 +64,7 @@ def theoretical_overhead(protocol, window, p_error):
     return 100.0 * (attempts_per_delivered - 1.0)
 
 
-# ============================================================
 # Графики: k(p) и t(p) при фиксированном окне
-# ============================================================
 
 def plot_metric(rows, window_size, metric_key, ylabel, title, filename,
                 ylim=None):
@@ -99,9 +93,7 @@ def plot_metric(rows, window_size, metric_key, ylabel, title, filename,
     print(f'Сохранён график: {filename}')
 
 
-# ============================================================
 # Семейства графиков для разных размеров окна
-# ============================================================
 
 def plot_family(rows, metric_key, ylabel, title, filename, ylim=None):
     """
@@ -133,9 +125,7 @@ def plot_family(rows, metric_key, ylabel, title, filename, ylim=None):
     print(f'Сохранён график: {filename}')
 
 
-# ============================================================
 # Главный график задания: H(p) для разных W
-# ============================================================
 
 def plot_overhead_family(rows, filename='plot_overhead_family.png'):
     """
@@ -162,9 +152,7 @@ def plot_overhead_family(rows, filename='plot_overhead_family.png'):
     print(f'Сохранён график: {filename}')
 
 
-# ============================================================
 # Сравнение GBN и SR с теорией при фиксированном W
-# ============================================================
 
 def plot_comparison_with_theory(rows, window=8, filename=None):
     """
@@ -198,9 +186,7 @@ def plot_comparison_with_theory(rows, window=8, filename=None):
     print(f'Сохранён график: {filename}')
 
 
-# ============================================================
 # Точка входа
-# ============================================================
 
 def main():
     rows = load_results()
@@ -236,7 +222,7 @@ def main():
                 title='Зависимость t от p',
                 filename='plot_t_family.png')
 
-    # 3. Главный график по заданию: H(p) для разных W
+    # 3. Главный график: H(p) для разных W
     plot_overhead_family(rows, filename='plot_overhead_family.png')
 
     # 4. Прямое сравнение GBN и SR с теорией

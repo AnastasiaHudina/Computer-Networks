@@ -1,0 +1,140 @@
+{
+    "line": [
+        {
+            "probability": 0,
+            "reachability": 100.0
+        },
+        {
+            "probability": 5,
+            "reachability": 79.4
+        },
+        {
+            "probability": 10,
+            "reachability": 65.4
+        },
+        {
+            "probability": 15,
+            "reachability": 47.9
+        },
+        {
+            "probability": 20,
+            "reachability": 38.3
+        },
+        {
+            "probability": 25,
+            "reachability": 35.1
+        },
+        {
+            "probability": 30,
+            "reachability": 30.5
+        },
+        {
+            "probability": 35,
+            "reachability": 30.4
+        },
+        {
+            "probability": 40,
+            "reachability": 19.6
+        },
+        {
+            "probability": 45,
+            "reachability": 17.7
+        },
+        {
+            "probability": 50,
+            "reachability": 16.5
+        }
+    ],
+    "ring": [
+        {
+            "probability": 0,
+            "reachability": 100.0
+        },
+        {
+            "probability": 5,
+            "reachability": 93.0
+        },
+        {
+            "probability": 10,
+            "reachability": 84.8
+        },
+        {
+            "probability": 15,
+            "reachability": 69.8
+        },
+        {
+            "probability": 20,
+            "reachability": 67.3
+        },
+        {
+            "probability": 25,
+            "reachability": 49.9
+        },
+        {
+            "probability": 30,
+            "reachability": 39.5
+        },
+        {
+            "probability": 35,
+            "reachability": 32.2
+        },
+        {
+            "probability": 40,
+            "reachability": 28.8
+        },
+        {
+            "probability": 45,
+            "reachability": 21.6
+        },
+        {
+            "probability": 50,
+            "reachability": 20.5
+        }
+    ],
+    "star": [
+        {
+            "probability": 0,
+            "reachability": 100.0
+        },
+        {
+            "probability": 5,
+            "reachability": 91.5
+        },
+        {
+            "probability": 10,
+            "reachability": 86.5
+        },
+        {
+            "probability": 15,
+            "reachability": 76.9
+        },
+        {
+            "probability": 20,
+            "reachability": 65.3
+        },
+        {
+            "probability": 25,
+            "reachability": 61.9
+        },
+        {
+            "probability": 30,
+            "reachability": 50.7
+        },
+        {
+            "probability": 35,
+            "reachability": 43.5
+        },
+        {
+            "probability": 40,
+            "reachability": 40.7
+        },
+        {
+            "probability": 45,
+            "reachability": 33.2
+        },
+        {
+            "probability": 50,
+            "reachability": 27.0
+        }
+    ]
+}
